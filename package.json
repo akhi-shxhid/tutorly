@@ -4,9 +4,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "vite --config LearnSparkTutor/vite.config.ts",
-    "build": "vite build --config LearnSparkTutor/vite.config.ts",
-    "preview": "vite preview --config LearnSparkTutor/vite.config.ts",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "check": "tsc"
   },
   "dependencies": {
