@@ -12,7 +12,7 @@ import {
   insertQuizQuestionSchema,
   insertChatConversationSchema,
   insertChatMessageSchema
-} from "@shared/schema";
+} from "../shared/schema";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // User routes
