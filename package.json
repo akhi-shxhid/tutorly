@@ -4,16 +4,13 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development tsx LearnSparkTutor/server/index.ts",
-    "build": "vite build",
-    "start": "NODE_ENV=production node dist/index.js",
-    "check": "tsc",
-    "db:push": "drizzle-kit push"
+    "dev": "vite --config LearnSparkTutor/vite.config.ts",
+    "build": "vite build --config LearnSparkTutor/vite.config.ts",
+    "preview": "vite preview --config LearnSparkTutor/vite.config.ts",
+    "check": "tsc"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
-    "@jridgewell/trace-mapping": "^0.3.25",
-    "@neondatabase/serverless": "^0.10.4",
     "@radix-ui/react-accordion": "^1.2.4",
     "@radix-ui/react-alert-dialog": "^1.1.7",
     "@radix-ui/react-aspect-ratio": "^1.1.3",
@@ -42,15 +39,11 @@
     "@radix-ui/react-toggle-group": "^1.1.3",
     "@radix-ui/react-tooltip": "^1.2.0",
     "@tanstack/react-query": "^5.60.5",
-    "@types/express": "^4.17.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^3.6.0",
-    "drizzle-orm": "^0.39.1",
-    "drizzle-zod": "^0.7.0",
     "embla-carousel-react": "^8.6.0",
-    "express": "^4.18.3",
     "firebase": "^11.6.1",
     "framer-motion": "^11.18.2",
     "input-otp": "^1.4.2",
@@ -77,7 +70,6 @@
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.17",
-    "tsx": "^4.7.1",
     "typescript": "5.6.3",
     "vite": "^5.4.14"
   }
